@@ -47,7 +47,7 @@ body {
 }
 
 .main_wrapper {
-    background-image: url(../assets/mainBg.png);
+    background-image: url(./images/mainBg.png);
     background-size: cover;
     background-position: center;
     padding-bottom: 95px;
@@ -67,6 +67,9 @@ nav a {
     font-family: 'IBM Plex Mono';
     text-decoration: none;
     font-size: 14px;
+}
+nav img {
+cursor: pointer;
 }
 
 .main-title {
@@ -93,8 +96,8 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     background: rgba(2, 6, 10, 0.85);
-    ;
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .main-subtitle_item p {
@@ -203,25 +206,25 @@ nav a {
 
 .chooce-a-trip-photo-wrapper div:nth-of-type(1) {
     top: 0;
-    background-image: url(../assets/photo/Ellipse1.png);
+    background-image: url(./images/photo/Ellipse1.png);
 
 }
 
 .chooce-a-trip-photo-wrapper div:nth-of-type(2) {
     right: 0;
-    background-image: url(../assets/photo/Ellipse2.png);
+    background-image: url(./images/photo/Ellipse2.png);
 
 }
 
 .chooce-a-trip-photo-wrapper div:nth-of-type(3) {
     bottom: 0;
-    background-image: url(../assets/photo/Ellipse3.png);
+    background-image: url(./images/photo/Ellipse3.png);
 
 }
 
 .chooce-a-trip-photo-wrapper div:nth-of-type(4) {
     left: 0;
-    background-image: url(../assets/photo/Ellipse4.png);
+    background-image: url(./images/photo/Ellipse4.png);
 
 }
 
@@ -234,6 +237,7 @@ nav a {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .navigation {}
@@ -302,27 +306,27 @@ nav a {
 }
 
 .map-image:nth-child(1) {
-    background-image: url(../assets/photo/map/park.png);
+    background-image: url(./images/photo/map/park.png);
 }
 
 .map-image:nth-child(2) {
-    background-image: url(../assets/photo/map/cruise.png);
+    background-image: url(./images/photo/map/cruise.png);
 }
 
 .map-image:nth-child(3) {
-    background-image: url(../assets/photo/map/parom.png);
+    background-image: url(./images/photo/map/parom.png);
 }
 
 .map-image:nth-child(4) {
-    background-image: url(../assets/photo/map/air.png);
+    background-image: url(./images/photo/map/air.png);
 }
 
 .map-image:nth-child(5) {
-    background-image: url(../assets/photo/map/gd.png);
+    background-image: url(./images/photo/map/gd.png);
 }
 
 .map-image:nth-child(6) {
-    background-image: url(../assets/photo/map/narody.png);
+    background-image: url(./images/photo/map/narody.png);
 }
 
 .active {
@@ -335,6 +339,13 @@ nav a {
 
 .booking {
     background: #48607E;
+}
+
+.thanksMessage{
+    position: absolute;
+    height: 100px;
+    left: -30%;
+    transition: all ease .3s;
 }
 
 .booking_container {
@@ -363,7 +374,7 @@ nav a {
     gap: 27px;
 }
 
-.inputs-wrapper input {
+.inputs-wrapper input, .submit {
     width: 100%;
     height: 96px;
     border-radius: 15px;
@@ -375,13 +386,13 @@ nav a {
     border: none;
 }
 
-.inputs-wrapper input[type=submit] {
+.inputs-wrapper .submit {
     background: #FEAA90;
     color: #fff;
     transition: all .3s ease;
 }
 
-.inputs-wrapper input[type=submit]:hover {
+.inputs-wrapper .submit:hover {
     background: #ff8a67;
     color: #fff;
 }
@@ -428,3 +439,4 @@ cursor: pointer;
 .social-network img:hover{
    filter: invert(1);
 }
+

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=IBM+Plex+Mono&family=Michroma&family=Open+Sans&display=swap');
+/* font-family: 'Gabriela', serif; */
+/* font-family: 'IBM Plex Mono', monospace; */
+/* font-family: 'Michroma', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+input {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    /* background: #F7F7F7; */
+    background: #072751;
+
+}
+
+
+[class*="container"] {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main_wrapper {
+    background-image: url(./images/mainBg3.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 95px;
+
+}
+
+nav {
+    /* width: 100%; */
+    height: 182px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-family: 'IBM Plex Mono';
+    text-decoration: none;
+    font-size: 14px;
+}
+nav img {
+cursor: pointer;
+}
+
+.main-title {
+    margin-top: 135px;
+    margin-bottom: 70px;
+    font-family: 'Gabriela';
+    font-size: 120px;
+    text-align: center;
+}
+
+/* .main-subtitle-wrapper {
+    width: 1038px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-subtitle_item {
+    width: 330px;
+    height: 80px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(2, 6, 10, 0.85);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.main-subtitle_item p {
+    font-family: 'IBM Plex Mono';
+    font-size: 11.8819px;
+} */
+.booking {
+    background: #48607E;
+}
+
+.thanksMessage{
+    position: absolute;
+    height: 100px;
+    left: -30%;
+    transition: all ease .3s;
+}
+
+.booking_container {
+    width: 1092px;
+}
+
+.booking-title {
+    padding-top: 52px;
+    margin-bottom: 62px;
+}
+
+.booking-title p {
+    color: #fff;
+}
+
+.title {}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 347px 1fr;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.inputs-wrapper input, .submit {
+    width: 100%;
+    height: 96px;
+    border-radius: 15px;
+    color: black;
+    padding: 15px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+}
+
+.inputs-wrapper .submit {
+    background: #FEAA90;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.inputs-wrapper .submit:hover {
+    background: #ff8a67;
+    color: #fff;
+}
+
+.message-wrapper {
+    display: flex;
+    height: 80%;
+    justify-content: flex-end;
+}
+
+.footer {
+    background: rgba(146, 169, 194, 0.72);
+    /* height: 172px; */
+}
+
+.footer_container {
+    padding: 37px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.footer-title {
+    font-family: 'Michroma';
+    font-size: 14px;
+    line-height: 141.8%;
+    letter-spacing: 0.14em;
+}
+
+.footer-subtitle {
+    font-family: 'Michroma';
+    font-size: 14px;
+    line-height: 141.8%;
+    letter-spacing: 0.14em;
+}
+
+.social-network {
+    display: flex;
+    gap: 21px;
+}
+.social-network img{
+cursor: pointer;
+}
+.social-network img:hover{
+   filter: invert(1);
+}
+
